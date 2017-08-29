@@ -1,12 +1,13 @@
 package br.com.institutoivoti.test;
 
+import static org.junit.Assert.*;
+
 import org.junit.Before;
 import org.junit.Test;
 
 import br.com.institutoivoti.Conta;
-import junit.framework.TestCase;
 
-public class TestaContaCorrente{
+public class ContaTesteTest{
 	
 	private Conta conta;
 	
