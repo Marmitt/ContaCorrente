@@ -79,7 +79,7 @@ public class ContaTesteTest{
 		conta.Saldo(100);
 		conta.DebitaDaConta(120);
 		conta.limiteConta(-30);
-		assertEquals(conta.getLimite(), -20, 0);
+		assertEquals(conta.getLimite(), false);
 	}
 	
 	@Test
@@ -87,7 +87,13 @@ public class ContaTesteTest{
 		conta.Saldo(100);
 		conta.DebitaDaConta(110);
 		conta.limiteConta(-10);
-		assertEquals(conta.getLimite(), 2, 0);
+		assertEquals(conta.getLimite(), true);
+	}
+	@Test
+	public void testaCredito() {
+		conta.Saldo(850);
+		conta.Credito(100);
+		assertEquals(conta.getCredito(), 950, 0);
 	}
 
 }
