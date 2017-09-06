@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.institutoivoti.Conta;
+import br.com.institutoivoti.lib.Conta;
 
 public class ContaTesteTest{
 	
@@ -95,7 +95,7 @@ public class ContaTesteTest{
 		conta.Credito(100);
 		assertEquals(conta.getCredito(), 950, 0);
 	}
-
+ 
 }
 
 
